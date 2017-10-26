@@ -3,8 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Primeira aula de JQuery</title>
+
+	<script type = "text/javascript" src = "../js/jquery.js"></script>
+	<script type = "text/javascript">  /*para usar a biblioteca de JQuery, é necessario usar um caracter especial para fazer a chamada:($) ou JQuery*/
+		$(document).ready(function(){
+			$('#principal').append('<p>Texto Novo</p>');
+			$('#primeiro').click(function(){
+				$('div').append('<h2>Onii-Chan!!</h2>');
+			});
+		});
+	</script>
+
 </head>
 <body>
-	
+
+	<header>
+		<h1>Pagina com JQuery</h1>
+	</header>
+
+	<main>
+		<section id="principal">
+			<div>
+				<button id = "primeiro">Primeiro</button>
+
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ducimus, excepturi debitis voluptas perferendis rem accusamus, temporibus repudiandae officiis in vitae explicabo dolor aliquid amet, fugiat dolore deserunt omnis veritatis.</div>
+				<div>Natus tenetur placeat asperiores veniam corrupti expedita repellat, nemo, earum cupiditate perspiciatis ut nisi quis obcaecati quia aliquam. Voluptatem veritatis sapiente possimus dicta magnam laborum facilis nemo aspernatur ratione laboriosam!</div>
+				<div>Consequuntur vel cumque provident harum minus unde consectetur, earum porro vero totam qui perspiciatis omnis eveniet quisquam voluptates pariatur commodi repellat est. Aliquam dolore ex officia harum inventore fuga facere.</div>
+			</div>
+
+			<div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aut ea perspiciatis natus quam error quos saepe vitae qui! Facilis a accusamus quas saepe fugiat, blanditiis dolorum amet corporis omnis!</div>
+				<div>Tenetur temporibus magnam, debitis corporis labore blanditiis itaque fugiat, ipsa architecto modi praesentium ipsum cum ea quisquam molestiae doloribus non fuga? Deserunt fugiat dolores delectus, nulla harum natus eveniet. Esse!</div>
+				<div>Libero alias deleniti voluptates. Impedit tempora enim voluptate itaque illum, repudiandae quis voluptates dignissimos expedita nisi, dicta cum ut quam et facilis ipsam ipsa. Quidem provident, veritatis dicta nemo ex.</div>
+			</div>
+
+		</section>
+	</main>
+
 </body>
 </html>
